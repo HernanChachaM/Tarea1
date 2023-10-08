@@ -1,0 +1,149 @@
+Funcion Ejercicio1
+	// orden de procedencia:  (), ^ *, / mod div, + -
+	// del mismo nivel se resuelve de izquierda a derecha
+	// Dado a=3 y b=7, encuentra el valor de y = 2 * a + b - a mod 3.
+	Definir a,b,res Como Entero //Defino las variables dadas
+	a=3;b=7 //Asigno el valor de las variables
+	// Dado a=3 y b=7, encuentra el valor de y = 2 * a + b - a mod 3.
+	// Cambio la variable " y" por "res" ya que y marca como un operador juliano
+	//res = 2 * 3 + 7 - a mod 3
+	//res = 6 + 7 - 0
+	//res = 13
+	res=2 * a + b - a mod 3 //Coloco la ecuacion a la variable respuesta
+	Escribir "La respuesta es: " res //Se muestra la respouesta 
+FinFuncion
+
+Funcion Ejercicio2
+	// orden de procedencia:  (), ^ *, / mod div, + -
+	// del mismo nivel se resuelve de izquierda a derecha
+	Definir a,b,z Como Entero //Defino las variables dadas
+	a=10;b=4 //Asigno el valor de las variables
+	// Si a=10 y b=4, calcula el valor de z = a * b + 3 mod a + b.
+	// z = 10 * 4 + 3 mod 10 + 4
+	// z = 40 + 3 mod 10 + 4
+	// z = 40 + 3 + 4 
+	// z = 47
+	z = a * b + 3 mod a + b //Coloco la ecuacion a la variable z
+	Escribir "La respuesta es: " z //Se muestra la respouesta
+FinFuncion
+
+Funcion Ejercicio3
+	// orden de procedencia:  (), ^ *, / mod div, + -
+	// del mismo nivel se resuelve de izquierda a derecha	
+	//Con a=6 y b=2, determina el valor de w = a - b + 2 * a mod b.
+	Definir a,b,w Como Entero //Defino las variables dadas
+	a=6;b=2 //Asigno el valor de las variables
+	//Con a=6 y b=2, determina el valor de w = a - b + 2 * a mod b.
+	// w = 6 - 2 + 2 * 6 mod 2
+	// w = 6 - 2 + 12 mod 2
+	// w = 6 - 2 + 0
+	// w =  4
+	w = a - b + 2 * a mod b //Coloco la ecuacion a la variable w
+	Escribir "La respuesta es: " w //Se muestra la respouesta
+FinFuncion
+
+Funcion Ejercicio4
+	// orden de procedencia:  (), ^ *, / mod div, + -
+	// del mismo nivel se resuelve de izquierda a derecha	
+	Definir a,b,v Como Real //Defino las variables dadas
+	a=8;b=5 //Asigno el valor de las variables
+	//Para a=8 y b=5, encuentra el valor de v = 2 * b + a div 2 + 4 * b mod a
+	// v = 2 * 5 + 8 / 2 + 4 * 5 mod 8
+	// v = 10 + 8 / 2 + 4 * 5 mod 8
+	// v = 10 + 4 + 20 mod 8 
+	// v = 10 + 4 + 4 
+	// v = 18
+	v = 2 * b + a / 2 + 4 * b mod a //Coloco la ecuacion a la variable v
+	Escribir "La respuesta es: " v//Se muestra la respouesta
+FinFuncion
+
+Funcion Ejercicio5
+	//orden de procedencia:  (), ^ *, / mod div, + -
+	// del mismo nivel se resuelve de izquierda a derecha	
+	Definir a,b,u Como Entero //Defino las variables dadas
+	a=12;b=9 //Asigno el valor de las variables
+	//Si a=12 y b=9, calcula el valor de u = b - a + 3 * a mod b.
+	// u = 9 - 12 + 3 * 12 mod 9
+	// u = 9 - 12 + 36 mod 9
+	// u = 9 - 12 + 0
+	// u = -3
+	u = b - a + 3 * a mod b //Coloco la ecuacion a la variable u
+	Escribir "La respuesta es: " u//Se muestra la respouesta
+FinFuncion
+
+Funcion Ejercicio6
+	//orden de procedencia:  (), ^ *, / mod div, + -
+	// del mismo nivel se resuelve de izquierda a derecha
+	Definir resp Como Real //Definimos la variable como real ya que puede contener decimales
+	//(5 + 3 * 2) + 9 > 3 * 5 * 14 % 3
+	//res=(5 + 3 * 2) + 9 > 3 * 5 * 14 % 3
+	//res = (5 + 6 ) + 9 > 15 * 14 % 3
+	//res = (11) + 9 >  210 % 3
+	//res = 20 > 0
+	//res = verdadero
+	res=(5 + 3 * 2) + 9 > 3 * 5 * 14 % 3 //Escribimos el problema
+	Escribir res //La respuesta sera verdadera o falsa dependiendo del resultado
+FinFuncion
+
+Funcion Ejercicio7
+	//orden de procedencia:  (), ^ *, / mod div, + -
+	//del mismo nivel se resuelve de izquierda a derecha
+	Definir res Como Real //Definimos la variable como real ya que puede contener decimales
+	res= 2 *(4 - 10 + 8)/2* 36 *(1/2) 
+	// 2 *(4 -10 + 8)/2* 36 *(1/2)
+	// 2 * ( 2 ) / 2 * 36 * (1/2)
+	// 4 / 2 * 36 * (1/2)
+	// 2 * 36 * (1/2)
+	// 72 * (1/2)
+	// 36
+	Escribir "La respuesta es: " res//Se muestra la respouesta
+FinFuncion
+
+Funcion Ejercicio8
+	//orden de procedencia:  (), ^ *, / mod div, + -
+	//del mismo nivel se resuelve de izquierda a derecha
+	Definir res Como Real//Definimos la variable como real ya que puede contener decimales
+	res = 260 / 12 + 54 % 3 - 85 % 7
+	// 260 / 12 + 54 % 3 - 85 % 7
+	// 21,6 + 54 % 3 - 85 % 7
+	// 21,6 + 0 - 85 % 7
+	// 21,6 + 0 - 1
+	// 20,6
+	Escribir "La respuesta es: " res//Se muestra la respouesta
+FinFuncion
+
+Funcion Ejercicio9
+	//orden de procedencia:  (), ^ *, / mod div, + -
+	//del mismo nivel se resuelve de izquierda a derecha
+	respuesta = (48 < 2 * 3) | (2 * 7 < 12)
+	//(48 < 2 * 3) | | (2 * 7 < 12)
+	//(48 < 6) | | (14 < 12)
+	// Falso | | Falso
+	// Falso
+	Escribir "La respuesta es: " respuesta //Se muestra la respouesta
+FinFuncion
+
+Funcion Ejercicio10
+	//orden de procedencia:  (), ^ *, / mod div, + -
+	//del mismo nivel se resuelve de izquierda a derecha
+	respuesta = ((8 > 2) | (932 < 23)) & 4 == 2
+	//( ((8 > 2) | | (932 < 23) ) & 4 == 2
+	// ( ((8 > 2) | | (932 < 23) ) & 4 == 2
+	// ( (Verdadero | | (Falso) ) & Falso
+	// Verdadero & Falso 
+	// Falso
+	Escribir "La respuesta es: " respuesta //Se muestra la respouesta
+FinFuncion
+
+Algoritmo Ejercicio1al10
+	//Ejercicio1()
+	//Ejercicio2()
+	//Ejercicio3()
+	//Ejercicio4()
+	//Ejercicio5()
+	//Ejercicio6()
+	//Ejercicio7()
+	//Ejercicio8()
+	//Ejercicio9()
+	//Ejercicio10()
+FinAlgoritmo
