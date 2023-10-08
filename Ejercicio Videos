@@ -1,0 +1,171 @@
+Funcion Video1
+	//Entrada edad=0[lee]
+	//Proceso leer edad
+	//Salida mostrar variable
+	
+	Definir edad Como Entero
+	
+	Leer edad
+	
+	Escribir edad,"años"
+
+FinFuncion
+
+Funcion Video2
+	//Entrada num1=0[leer],num2=0[leer],resultado=0
+	//Proceso resultado <- num1 + num2
+	//Salida Escribir "El resultado"  resultado
+	
+	Definir num1,num2,resultado Como Entero
+	Escribir "Ingrese el numero 1"
+	Leer num1
+	Escribir "Ingrese el numero 2"
+	Leer num2
+	resultado <- num1 + num2
+	Escribir "El resultado ",resultado
+	
+FinFuncion
+
+Funcion Video3
+	//Entrada edad=0[leer]
+	//Proceso Si edad >= 18
+	//Salida es mayor o menor de edad
+	
+	Definir edad Como Entero
+	edad = 18 
+	Si edad >= 18 Entonces
+		Escribir "Eres mayor de edad"
+	SiNo
+		Escribir "Eres menor de edad"
+	FinSi
+	
+FinFuncion
+
+Funcion Video4
+	//Entrada dinero=char[si] sed= char[si] 
+	//Proceso Si sed ="si" y dinero ="si" 
+	//Sino Si sed="no" y dinero="si" 
+	//Salida SiNo Escribir "No tienes dinero,Ve para la casa"
+	
+	Definir dinero Como Caracter
+	
+	Definir sed Como Caracter
+	
+	sed <- "si";
+	dinero <- "si";
+	
+	Si sed ="si" y dinero ="si" Entonces
+		Escribir "Compro botella agua Entonces";
+	SiNo
+		Si sed="no" y dinero="si" Entonces
+			Escribir "Compra un chocolate";
+		SiNo
+			Escribir "No tienes dinero,Ve para la casa"
+		Fin Si
+	FinSi
+	
+FinFuncion
+
+Funcion Video5
+	//Entrada  numUsuario=0[leer] ,intentos=0
+	//Proceso Mientras intentos > ;0 intentos=3
+	//Si numAleatorio = numUsuario intentos =0
+	//Sino intentos - 1 
+	//Si intentos =0 perdio
+	//Salida
+	Definir numUsuario ,intentos Como Entero
+	numaleatorio <- Aleatorio(0,10)
+	intentos <- 3
+	
+	Mientras intentos > 0 Hacer
+		Escribir "Escribe un numero del 0 al 10"
+		Leer numUsuario
+		Si numAleatorio = numUsuario Entonces
+			Escribir "Wow eres un genio, acertaste"
+			intentos = 0
+		SiNo
+			intentos <- intentos - 1 
+			Escribir "Perdedor te quedan: ",intentos,"intentos"
+		FinSi
+	FinMientras
+	
+	Si intentos = 0 Entonces
+		Escribir "Ya no tienes intentos, perdiste"
+	SiNo
+		Escribir "Ganaste :D "
+	FinSi
+
+FinFuncion
+
+Funcion Video6
+	//Entrada combo=0 
+	//Proceso SEgun combo seleccionar una Opcion 
+	//Salida Semuestra la opcion y precio
+	Escribir "Que combo desea?"
+	Escribir "1 ; Combo 1"
+	Escribir "2 ; Combo 2"
+	Escribir "3 ; Combo 3"
+	Definir combo Como Entero
+	
+	Segun combo Hacer
+		1:
+			Escribir "El valor es de 5.00$"
+		2:
+			Escribir "El valor es de 6.00$"
+		3:
+			Escribir "El valor es de 7.00$"
+	FinSegun
+	
+FinFuncion
+
+Funcion Video7
+	//Entrada num=0 respuesta=char[leer]
+	//Proceso pepeti respuesta=no 
+	//Salida Se muestra azar hasta = respuesta
+	
+	Definir num Como Entero
+	Definir respuesta Como Caracter
+	
+	Repetir
+		num <- Aleatorio(0,10)
+		Escribir "El numero aleatorio es: ",num
+		Escribir "Deseas otro numero? "
+		Leer respuesta
+	Hasta Que respuesta = "no" 
+	
+FinFuncion
+
+Funcion Video8
+	//Entrada proceso=char
+	//Proceso dimensionar;Para i = 1 Hasta 3 
+	//Salida Se muestran los valores de personas
+	Definir personas Como Caracter
+	
+	Dimension personas(3);
+	
+	personas(1) <- "Ignacio"
+	personas(2) <- "Victor"
+	personas(3) <- "Juanito"
+	
+	Para i = 1 Hasta 3 Con Paso 1 Hacer
+		Escribir "El nombre de mi arreglo es: ",personas(i)
+		
+	FinPara
+	
+FinFuncion
+Funcion Video9 
+	//Salida Mostrar el mensaje
+	Escribir "Hola mundo"
+	
+FinFuncion
+Algoritmo Videos
+	//Video1()
+	//Video2()
+	//Video3()
+	//Video4()
+	//Video5()
+	//Video6()
+	//Video7()
+	//Video8()
+	//Video9()
+FinAlgoritmo
