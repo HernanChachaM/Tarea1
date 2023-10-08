@@ -1,0 +1,1225 @@
+Funcion Ejercicio11
+	
+	//-Suma de dos números: Escribe un programa que tome dos números como entrada y muestre su suma. 
+	
+	//Entrada: num1=0[Leer ] num2=[leer]
+	//Proceso: Escribimos entre comillas el enunciado indicando que ingrese los valores 
+    // num1 + num2 
+	//Salida: Mostrar num1 + num2
+	
+	Definir num1,num2 Como Entero
+	Escribir "Ingresa los numeros que deseas sumar"
+	Leer num1,num2 
+	Escribir "La respuesta es: " num1+num2 
+FinFuncion
+
+Funcion Ejercicio12
+	
+	//-Área de un triángulo: Pide al usuario que ingrese la base y la altura de un triángulo, 
+	//luego calcula y muestra su área 
+	
+	//Entrada: altura =.0 [leer] base =.0 [leer] , area = .0
+	//Proceso : area = altura * base / 2 ya que es la formula
+	//Salida: muestro area = .0
+	
+	Definir altura,base,area Como Real
+	Escribir "Ingresa el valor de la base y la altura del triangulo"
+	Leer altura,base
+	area = altura * base / 2
+	Escribir "El area es: " area
+FinFuncion
+
+Funcion Ejercicio13
+	
+	//-Número par o impar: Solicita al usuario que ingrese un número e indica si es par o impar
+	
+	//Enreada: cant = 0 [leer]
+	//Proceso: condicion Si mod 2 = 0  de cant entonces
+	//El numeroes par Sino cant es impar 
+	//Salida: Se miestra el resultado de la condicion 
+	
+	Definir cant Como Real
+	Escribir "Tu numero es par o impar"
+	Escribir "Ingresa el numero"
+	Leer cant 
+	Si cant mod 2 = 0 Entonces
+		Escribir "El numero es par"
+	SiNo
+		Escribir "El numero es impar"
+	FinSi
+FinFuncion
+
+Funcion Ejercicio14
+	
+	//-Calculadora simple: Crea una calculadora que realice operaciones básicas como suma, 
+	//resta, multiplicación y división, según la elección del usuario
+	
+	//Entrada: num =.0[Leer] num2=.0 [leer] opc =0
+	//Proceso: Agrego bucle Mientras 
+	//opc=0 [leer] 
+	//Agrego switch segun opc 
+	//Salida: 1=num1+num2 2=num1-num2 3=num1*num2 4=num1/num2
+	
+	Definir num1,num2,opc Como Real
+	Escribir "Escriba los numeros de la operacion"
+	Leer num1,num2	
+	opc=0
+	Mientras opc <> 4 Hacer
+		Escribir "Escriba 1 Si desea sumar"
+		Escribir "Escriba 2 Si desea restar"
+		Escribir "Escriba 3 si desea multiplicar"
+		Escribir "Escriba 4 si desea dividir"
+		leer opc 
+		
+		Segun opc Hacer
+			1:
+				Escribir "La respuesta es: " num1+num2
+			2:
+				Escribir "La respuesta es: " num1-num2
+			3:
+				Escribir "La respuesta es: " num1*num2
+			4:
+				Escribir "La respuesta es: " num1/num2
+				
+			De Otro Modo:
+				Escribir "Seleccione la operacion que desea realizar"
+		Fin Segun
+		
+	Fin Mientras
+FinFuncion
+
+Funcion Ejercicio15
+	
+	//-Tabla de multiplicar: Pide al usuario un número y muestra su tabla de multiplicar del 1 al 10
+	
+	//entrada tab=0[leer] 
+	//Proceso esc tab= tab*1...tab= tab*10
+	// concadeno entre comillas y comas a la variable para que se muestre en la pantalla
+	//": ",a," x 1 es: a*1 asi sucesivamente hasta el 10 
+	//Salida Me mostraria tab*1...10 
+	
+	Definir tab Como Real
+	Escribir "Escribe el numero"
+	Leer tab
+	Escribir "Los multiplos de ",a," son: "
+	Escribir ": ",tab," x 1 es: " tab*1
+	Escribir ": ",tab," x 2 es: " tab*2
+	Escribir ": ",tab," x 3 es: " tab*3
+	Escribir ": ",tab," x 4 es: " tab*4
+	Escribir ": ",tab," x 5 es: " tab*5
+	Escribir ": ",tab," x 6 es: " tab*6
+	Escribir ": ",tab," x 7 es: " tab*7
+	Escribir ": ",tab," x 8 es: " tab*8
+	Escribir ": ",tab," x 9 es: " tab*9
+	Escribir ": ",tab," x 10 es: " tab*10
+FinFuncion
+
+Funcion Ejercicio16
+	
+	//-Copiar palabra: Escribe un programa que lea dos palabras y concatena en otra variable las dos palabras 
+	
+	//Entrada a= char[Leer] b=char[Leer] c=char[Leer] d=char[Leer]
+	//Proceso: esc a " "+b 
+	//Concadeno y uno las primeras variables a " "+b  
+	//Salida: esc  a " " +b " "+c " "+d
+	
+	Definir a,b,c,d Como Caracter
+	Escribir "Escribe un par de palabras  "
+	Leer a,b 
+	Escribir a " "+b 
+	Escribir "Escribe otro par de palabras"
+	Leer c , d
+	Escribir a " " +b " "+c " "+d
+FinFuncion
+
+Funcion Ejercicio17
+	
+	//-Mayor de tres números: Solicita tres números y determina cuál es el mayor de ellos
+	
+	//Defino a=0[leer] b=0[leer] y c=0[leer] 
+	//Proceso Si a>b y a>c esc el > es a 
+	//Sino si b>a y b>c esc el > es b 
+	//Sino esc el > es c 
+	//Salida se muestra la variable del numero mayor
+	
+	Definir a,b,c Como Entero
+	Escribir "Escriba tres numeros para saber cual es el mayor"
+	Leer a,b,c
+	Si a>b y a>c Entonces
+		Escribir "EL numero mayor es: " a 
+	SiNo
+		Si b>a y b>c  Entonces
+			Escribir "EL numero mayor es: " b
+		SiNo
+			Escribir "EL numero mayor es: " c
+		Fin Si
+	Fin Si
+FinFuncion
+
+Funcion Ejercicio18
+	
+	//-Edad mínima para votar: Pregunta la edad del usuario y verifica si es elegible para votar (18 años o más)
+	
+	//Entrada: edad=0[leer]
+	//Proceso Si a > = 18 es > de edad Sino < de edad 
+	//Salida: Esc res de la condicion
+	
+	Definir edad Como Entero
+	Escribir "Ingresa tu edad"
+	Leer edad
+	Si edad >= 18 Entonces
+		Escribir "Udted puede votar"
+	SiNo
+		Escribir "Usted ahun no puede votar"
+	FinSi
+FinFuncion
+
+Funcion  Ejercicio19
+	
+	//-Calculadora de BMI: Crea un programa que calcule el índice de masa corporal (BMI) 
+	//a partir del peso y la altura del usuario, y luego indique si está en una categoría de peso saludable
+	
+	//Entrada  peso=0[leer],altura=0[leer],res=.0
+	//Proceso res=peso/altura^2 formuladel IMB
+	//agrego condicional; si res <= a 18.5= peso bajo 
+	//agrego condicional si res < 26 = Peso normal 
+	//Agrego otra condicional Si res < 30 = sobrepeso Sino si res > 30 =obesidad 
+	//Salida me muestra el INB = res y me da el rango en el que esta 
+	
+	Definir peso,altura,res Como Real
+	Escribir "Ingrese su Peso en kilogramos"
+	Leer peso
+	Escribir"Ingrese su altura en metros"
+	Leer altura
+	res=peso/altura^2
+	Escribir "Su IMC es: " res
+	Si res <= 18.5 Entonces
+		Escribir "Peso Bajo"
+	SiNo
+		Si  res < 26 Entonces
+			Escribir "Peso normal"
+		SiNo
+			si res < 30 Entonces
+				Escribir "Sobrepeso"
+			SiNo
+				Escribir "Obesidad"
+			FinSi
+			
+		FinSi
+	FinSi
+FinFuncion
+
+Funcion Ejercicio20
+	
+	//Número positivo, negativo o cero: Pide al usuario que ingrese un número y muestra si es positivo, negativo o cero. 
+	
+	//Entrada num=0[leer]
+	//Proceso Si num > 0 = +
+	//Sino Si num==0 = 0 
+	//Sino num<0 = -
+	//Salida: Se muestra el resultado de la condicion
+	
+	Definir num Como Real
+	Escribir "Ingresa un numero"
+	Leer num
+	Si num>0 Entonces
+		Escribir "El numero es positivo"
+	SiNo
+		Si num=0 Entonces
+			Escribir "El numero es 0"
+		SiNo
+			Si num<0 Entonces
+				Escribir "El numero es negativo"
+			FinSi
+		FinSi
+	FinSi
+FinFuncion
+
+Funcion Ejercicio21
+	
+	//- Año bisiesto: Solicita al usuario un año y determina si es un año bisiesto o no. 
+	//Un año bisiesto es divisible por 4, pero no por 100, a menos que también sea divisible por 400
+	
+	//Entrada anio=0[leer]
+	//Para saber si un año es biciesto tomamos los ultimos dos digitos del año 
+	//indicamos al usuario que coloque eso 
+	//Proceso Si anio mod 4 = 0 
+	//Salida: Si la condicio se cumple deciomos que el año es biciesto sino no lo es 
+	
+	Definir anio Como real
+	Escribir "Escriba los dos ultimos digitos del año"
+	Escribir "Ejemplo:2018"
+	Escribir "18"
+	Leer anio
+	Si anioo mod 4 = 0 Entonces
+		Escribir "El año es biciesto"
+	SiNo
+		Escribir "El año no es biciesto"
+	Fin Si
+FinFuncion
+
+Funcion Ejercicio22
+	
+	//Signo zodiacal: Pide al usuario que ingrese su mes y día de nacimiento, luego determina su signo zodiacal.
+	//Puedes usar una serie de declaraciones if para comparar las fechas ingresadas con las fechas límite de cada signo zodiacal
+	
+	//Entrada dia=0[leer],mes=0[leer]
+	//Para saber el signo declaro a cada mes como una variable y le asigno un valor consecutivo y ordenado 
+	//en=1;feb=2;mar=3;abr=4;may=5;jun=6;jul=7;agos=8;sep=9;oct=10;nov=11;dic=12
+	//Proceso: Segun mes hacer 
+	//Si dia <= dia # dia se le asigna un signo u otro
+	//Reperitir con todas las variables de los meses 
+	//Salida : Escribo el signo al de los valores asignados 
+	
+	
+	Definir dia,mes,en,feb,mar,abr,may,jun,jul,agos,sep,oct,mov,dic Como Entero
+	Escribir "Escribe el dia "
+	Leer dia
+	Escribir "Escribe el mes"
+	Escribir "En numeros"
+	Leer mes
+	
+	en=1;feb=2;mar=3;abr=4;may=5;jun=6;jul=7;agos =8;sep=9;oct=10;nov=11;dic=12
+	
+	Segun mes Hacer
+		1:
+			Si dia<=19 Entonces
+				Escribir "Capricornio"
+			SiNo
+				Escribir "Acuario"
+			FinSi
+		2:
+			Si dia<=18 Entonces
+				Escribir "Acuario"
+			Sino
+				Escribir "Piscis"
+			FinSi
+		3:
+			Si dia<=20 Entonces
+				Escribir "Piscis"
+			SiNo
+				Escribir "Aries"
+			FinSi
+		4:
+			Si dia<=19 Entonces
+				Escribir "Aries"
+			SiNo
+				Escribir "Tauro"
+			FinSi
+		5:
+			Si dia<=20 Entonces
+				Escribir "Tauro"
+			SiNo
+				Escribir "Geminis"
+			FinSi
+		6:
+			Si dia<=20 Entonces
+				Escribir "Geminis"
+			SiNo
+				Escribir "Cancer"
+			FinSi
+		7:
+			Si dia<=22  Entonces
+				Escribir "Cancer"
+			SiNo
+				Escribir "leo"
+			FinSi
+		8:
+			Si dia<=22 Entonces
+				Escribir "Leo"
+			SiNo
+				Escribir "Virgo"
+			FinSi
+		9:
+			Si dia<=22 Entonces
+				Escribir "Virgo"
+			Sino 
+				Escribir "Libra"
+			FinSi
+		10:
+			Si dia<=22 Entonces
+				Escribir "Libra"
+			SiNo
+				Escribir "Escorpio"
+			FinSi
+		11:
+			Si dia<=21 Entonces
+				Escribir "Escorpio"
+			SiNo
+				Escribir "Sagitario"
+			FinSi
+			
+		De Otro Modo:
+		12: 
+			Si dia<=21 Entonces
+				Escribir "Sagitario"
+			SiNo
+				Escribir "Capricornio"
+			FinSi
+	Fin Segun
+FinFuncion
+
+Funcion Ejercicio23
+	
+	//Día del mes con respecto a la segunda quincena: Solicita al usuario que ingrese un número de día del mes 
+	//(por ejemplo, del 1 al 31) y verifica si ese día pertenece a la primera quincena (días 1-15) o a la segunda quincena (días 1631). 
+	
+	//Entrada: quin=0[leer]
+	//Proceso Si quin > = 18 es > 1 quincena Sino 2 quincena
+	//Salida: Esc quin de la condicion
+	
+	Definir quin Como Entero
+	Escribir "ingrese el dia en numeros" 
+	Leer a
+	Si quin <=15 Entonces
+		Escribir "Primera quincena"
+	SiNo
+		Escribir "Segunda quincena"
+	Fin Si
+FinFuncion
+
+Funcion Ejercicio24
+	
+	//Día de la semana: Pide al usuario que ingrese un número del 1 al 7, donde 1 representa el domingo, 2 el lunes, 
+	//3 el martes, y así sucesivamente. Luego, utiliza una estructura switch para mostrar el nombre del día de la semana 
+	//correspondiente al número ingresado
+	
+	//Entrada v=0[leer]
+	//Asigno un valor a las variables y dependiendo del valor se elegira un dia
+	//Agrego swicht a "v" 
+	//Proceso Agrego a cada numero el valor para Hacer
+	//Proceso se muestar el dia segun el numero 
+	
+	Definir v Como Entero
+	Escribir "Escribe un numero del 1 al 7"
+	Leer v
+	g=1;a=2;b=3;c=4;d=5;e=6;f=7
+	Segun v Hacer
+		a:
+			Escribir "El dia al que pertece el numero es el: Lunes"
+		b:
+			Escribir "El dia al que pertece el numero es el: Martes"
+		c:
+			Escribir "El dia al que pertece el numero es el: Miercoles"
+		d:
+			Escribir "El dia al que pertece el numero es el: Jueves"
+		e:
+			Escribir "El dia al que pertece el numero es el: Viernes"
+		f:
+			Escribir "El dia al que pertece el numero es el: Sabado"
+		De Otro Modo:
+		g:
+			Escribir "El dia al que pertece el numero es el: Domingo"
+	Fin Segun
+FinFuncion
+
+Funcion Ejercicio25
+	
+	//Frases iguales: Escribir un programa que ingrese dos frases e indique si son iguales
+	
+	//Entrada pal1=char[leer] pal2=char[leer] 
+	//Escribir las indicaciones y leo pal1 leo pal2
+	//Proceso Agreago una condicion donde si pal1==pal2
+	//Se cumple la funcion 
+	//salida Se muestra el mensaje si se cumple o no
+	
+	Definir pal1,pal2 Como Caracter
+	Escribir "Escribas dos palabras"
+	Leer pal1,pal2
+	Si pal1=pal2 Entonces
+		Escribir "Las palabras son iguales"
+	SiNo
+		Escribir "Las palabras son distintas"
+	Fin Si
+FinFuncion
+
+Funcion Ejercicio26
+	
+	//Defino art=0[leer] art2=0[leer] des=0 pf=0
+	//para aplicar un descuento se divide el descuento para 100 = 20% <- 0.2
+	//El resultado es el decuento eso lo resto al total
+	//Defino pf = Suma de los articulos formula para descuemto <- 0.2 * (art + art2)
+	//Defino desc= 0 para afirmar si se aplica el descuento 
+	//Proceso escribo las instrucciones para leer art y art2
+	//Agrego una condicion donde si desc = 1 se aplica el descuemto del 20%
+	//Salida si se cumple se suman el valor de los articulos <- art + art2 menos el pf= total del descuento
+	//Sino se cumple la condicion no se aplica el descuento <- art + art2 
+	
+	Definir art,art2,desc,pf Como Real
+	Escribir "El precio del producto es: "
+	Leer art
+	Escribir "El precio del producto es: "
+	Leer art2
+	pf=0.2*(art+art2)
+	Escribir "Precione 1 si desea aplicar un descuento del 20%"
+	Leer desc
+	Si desc=1 Entonces
+		Escribir "El Precio es: " art+art2-pf
+		
+	SiNo
+		Escribir "El Precio es: " art+art2
+	Fin Si
+FinFuncion
+
+Funcion  Ejercicio27
+	
+	//Para calcular el impuesto divido el valor del porcenyaje por 100 y la respuesta la sumo al total
+	//Entrada: val=0[leer] imp=.0[leer] 
+	//leo val donde agrego el vakor y leo imp donde agrego el % de impuesto
+	//Asigno fml= imp/100 que es la formila del impoesto
+	//Proceso Agrego una condicion donde agrego 
+	//fact=fml*val que se asigna si se cumple la funcion
+	//Salida se muestra el valor a pagar agreagado el impuesto o se pide repetir el Proceso 
+	
+	Definir val,imp,fml Como Real
+	Escribir "Ingrese el valor de su factura"
+	Leer val
+	Escribir "Ingrese el porcentaje de impuestos aplicados"
+	Leer imp
+	fml=imp/100
+	Si val > 0 Entonces
+		fact=fml + val
+		Escribir "El total de su facura es: " fact
+	SiNo
+		Escribir "Ingrese el valor de su factura"
+	Fin Si
+FinFuncion
+
+Funcion Ejercicio28
+	
+	//Entrada agrego variables pa ingreasar el valor del sueldo Suld = 0 actual y 
+	//la cantidad de aumento deseado aum = 0
+	//Proceso agrago una formula para a aum sacrle un porcentaje form= (aum/100) * Suld
+	//Salida se muestra el valor del nuevo sueldo
+	
+	Definir Suld,aum,form Como Real
+	Escribir "Ingrese su sueldo" 
+	Leer Suld
+	Escribir "Ingrese el porcentaje del aumento del 1 al 40 %"
+	Leer aum
+	form= (aum/100)*Suld
+	total= form + suld
+	Escribir "Su sueldo con aumento es: " total
+FinFuncion
+
+Funcion Ejercicio29
+	
+	//Calculadora de compra con múltiples artículos: Permite al usuario ingresar el
+	//precio y la cantidad de varios artículos que está comprando. Calcula el total de
+	//la compra y aplica un descuento del 10% si el total es mayor a cierta cantidad
+	//(por ejemplo, $100).
+	
+	Definir art,cant,total,descuento Como Real
+	Escribir "Selecciona valor del articulo"
+	Leer art
+	Escribir "Seleccione la cantidad que desea llevar"
+	Leer cant
+	total <- art * cant
+	Escribir "El total de su compra es " total
+	Escribir "Por compras mayor a 100$ aplica descuento del 10%"
+	
+	Si total > 100 Entonces
+		total <- total - ( total * 0.1)
+		Escribir "El total a pagar es " total
+	SiNo
+		Escribir "El total a pagar es " total
+	FinSi
+	
+FinFuncion
+
+Funcion Ejercicio30
+	
+	//Defino varialble leer sueldo  y para calcular el seuldo anual 
+	//lo multiplico por doce <-total = sueldo * 12
+	//muestro el total y agrego una condicion donde 
+	//Proceso Si total > 10001 y total < 20000 Entonces 
+	//aplico un impuesto del 10%
+	//su sino, si total > 20000 Entonces 
+	//Aplico un impuesto del 15%
+	//salida se muestra el total + la suma del impuesto asignado
+	
+	Definir sueldo,total,impuesto Como real
+	Escribir "Ingrese el valor de su sueldo: "
+	Leer sueldo
+    total = sueldo * 12
+	Escribir "Sus ingresos anuales son: " total
+	
+	Si total > 10001 y total < 20000 Entonces
+		impuesto = (total * 0.01)
+		Escribir "Sus impuesto son del 10% y debe pagar: " impuesto
+	SiNo
+		Si total > 20000 Entonces
+			impuesto = (total * 0.15) 
+			Escribir "Sus impuesto son del 20% y debe pagar: " impuesto
+		Fin Si
+    FinSi
+FinFuncion
+
+Funcion Ejercicio33
+	
+	//Defino años y sueldo como enteros
+	//Para saber el bono por antiguedad leo la variable sueldo 
+	//leo la variable años 
+	//Proceso agrego condicion donde si años es > 5 
+	//Se aplica un bono del 5% 
+	//bono = (sueldo *0.05) + sueldo
+	//Salida se muestra el resultado de condicion 
+	
+	Definir años,bono,sueldo  Como Real
+	Escribir "Ingrese su sueldo: "
+	Leer sueldo
+	Escribir "Ingrese los años que lleva en la empresa: "
+	leer años
+	Si años>5 Entonces
+		bono = (sueldo *0.05) + sueldo
+		Escribir "Recibe un bono a su sueldo del 5% " 
+		Escribir "Su sueldo es de: " bono
+	SiNo
+		Escribir "No adquiere ningun bono :( "
+		Escribir "Su sueldo es :" sueldo
+	Fin Si
+FinFuncion
+
+Funcion Ejercicio34
+	
+	//Agrego dos varialbles Distacia = para colocar la distancia
+	//Proceso Agreago una condicion donde si distancia es < 50 
+	//el valor sera de 10 
+	//y sino el valor sera de 20 
+	//Se muestra el valor del envio
+	
+	Definir distancia,costo Como entero
+	Escribir "Ingrese la distancia en kilometros de su envio: " 
+	Leer distancia
+	Si distancia < 50 Entonces
+		costo = 10
+		Escribir "El valor de su envio es de: " ,costo, "$" 
+	SiNo
+		costo = 20 
+		Escribir "EL valor de su envio es de: " ,costo, "$" 
+	FinSi
+FinFuncion
+
+Funcion Ejercicio35
+	
+	//Calculadora de descuento por lealtad del cliente: Pide al usuario que ingrese el
+	//total de sus compras mensuales durante un año
+	
+	Definir cant Como Real
+	Escribir "Ingrese el total de sus facturas mensuales"
+	Leer cant
+	
+	Si cant > 500 Entonces
+		Escribir "Usted recibira un descuento en su proxima compra " 
+	SiNo
+		Escribir "No aplica para el descuento " 
+	FinSi
+	
+FinFuncion
+
+Funcion Ejercicio36
+	
+	//Entrada agrego variables para ingresar el valor del producto y la cantidad 
+	//Creo variable para calcular el total a pagar <- producto * cantidad
+	//Proceso Agrego condiciones para asignar un descuento dependiendo del total 
+	//Si se cumple la primera condicion cantidad > 10 y cantidad < 50 Entonces agrego un descuento 
+	//del 5% y resto al total
+	//Sino Agrego abro otra condicion donde si antidad > 50 y cantidad < 100 Entonces agrago
+	// un descuento del 10% y lo resto del total
+	//Sino defino el ultimo descuento = cantidad > 100 de un 15% 
+	//salida se miestra el total a pagar 
+	
+	Definir producto,cantidad,total,des Como Real
+	Escribir "Ingrese el valor del producto que desea comprar: "
+	Leer producto
+	Escribir "Ingrese la cantidad de unidades a comprar: "
+	Leer cantidad
+	total = producto * cantidad
+	Si cantidad > 10 y cantidad < 50 Entonces
+		des = total - (total * 0.05)
+		Escribir "Su descuento es del 5% y debe pagar: " des
+	SiNo
+		Si cantidad > 50 y cantidad < 100 Entonces
+			des = total - (total * 0.10)
+			Escribir "Su descuento es del 10% y debe pagar: " des
+		SiNo
+			Si cantidad > 100 Entonces
+				des = total - (total * 0.15)
+				Escribir "Su descuento es del 15% y debe pagar: " des 
+				
+			FinSi
+		FinSi
+	Fin Si
+FinFuncion
+
+Funcion Ejercicio40
+	
+	//Entrada agrego una variable donde leo el numero de horas que desea 
+	//Asigno un valor a las horas = 15 
+	//Proceso multiplico las horas por el precio/hora
+	//Si las horas son mas de 10 aplico un descuento 
+	//Descuento del 10% = des1<- total - ( Total * 0.01)
+	//Agrego una condicion para aplicar el descuento 
+	//Si horas > 10 aplico des1
+	//sino se muestra el total a pagar
+	//Salida se muestra el valor menos el descuento si se cumpple la condicion o solo el total sino se cuple
+	
+	Definir des1,total,horas Como Real
+	Escribir "El valor del servicio por hora es de 15$ "
+	Escribir "Ingrese el total de horas que desea contratar el servicio: "
+	Leer horas 
+	total = horas * 15
+	
+	Si horas > 10 Entonces
+		des1 = total - (total * 0.01)
+		Escribir "El total a pagar es de: " des1
+	SiNo
+		Escribir "El total a pagar es de: " total
+	FinSi
+FinFuncion
+
+Funcion  Ejercicio41
+	
+	//Suma de números pares: Utiliza un bucle for para calcular la suma de los números pares del 1 al 50. 
+	
+	//Entrada: contador=0[leer] suma=0
+	//Proceso Para contador= 2 hasta = 50 con paso 2 
+	//hasta 50 porque es numero indicado y de dos n dos para que sean pares
+	//Salida  muestra numeros ;muestro la suma 
+	
+	
+	Definir contador,suma Como Entero
+	suma<-0
+	Para contador <- 2 Hasta 50 Con Paso 2 Hacer
+		Escribir "-" contador
+		suma<-suma + contador
+	Fin Para
+	Escribir "La suma de los numeros es: " suma
+FinFuncion
+
+Funcion Ejercicio42
+	
+	//Tabla de multiplicar: Utiliza un bucle for para imprimir la tabla de multiplicar de un número ingresado por el usuario del 1 al 12 
+	//Entrada num=0 [leer]
+	//Proceso Para num repetir hasta num * 12  paso de 1*1
+	//Salida Tabla
+	
+	Definir num Como Entero
+	
+	Escribir "Escriba el numero "
+
+    Leer num
+    Escribir "la tabla del numero es "
+    Para num <-0 Hasta num * 12 Con Paso num * 1 Hacer
+	Escribir "-" num
+    Fin Para
+	
+FinFuncion
+
+Funcion Ejercicio43
+	
+	//Contador de vocales: Utiliza un bucle while para contar el número de vocales en una palabra ingresada por el usuario
+	
+	//Entrada: frase=char[leer] 
+	//long <- Longitud(frase) letras = 1 total = 0
+	//Proceso Mientras letras <= long ;Segun Subcadena(frase,letras,letras)
+	// a= total + 1
+	//total=total + 1
+	//Salida Escribir "la frase ",frase," tiene ",total," vocales"
+	
+	Definir frase Como Caracter
+	Definir Long,letras,total Como Entero
+	Escribir "Escriba una frase"
+	Leer frase 
+	long <- Longitud(frase)
+	letras = 1
+	total = 0
+	
+	Mientras letras <= long Hacer
+		Segun Subcadena(frase,letras,letras) Hacer
+			"a" o "A":
+				total = total + 1
+			"e" o "E":
+				total = total + 1
+			"i" o "I":
+				total = total + 1
+			"o" o "O":
+				total = total + 1
+			"u" o "U":
+				total = total + 1
+		FinSegun
+		letras = letras + 1
+	Fin Mientras
+	Escribir "la frase ",frase," tiene ",total," vocales"
+	
+FinFuncion
+
+Funcion Ejercicio44
+	
+	//Contador de digitos: Utiliza un bucle for para contar el numero de dígitos en
+	//una palabra ingresada por el usuario
+	
+	Definir n Como Caracter
+	Escribir "Escribe una palabra"
+	Leer n
+	x <- Longitud(n)
+	Escribir "la palabra tiene ",x," digitos"
+	
+FinFuncion
+
+Funcion Ejercicio45
+	
+	//Adivina el número: Genera un número aleatorio y pide al usuario que adivine el número.
+	
+	//Entrada nazar=0 respuesta=0[leer]
+	//Proceso nazar agrego opcion azar 
+	//inicio respuesta=0
+	//for respuesta <> n azar Repetir
+	//Salida respuest = nazar
+	
+	Definir nazar,respuesta Como Entero
+	nazar <- azar(5) + 1
+	respuesta = 0
+	Mientras respuesta <> nazar Hacer
+		Escribir "Ingresa el numero del 1 al 5"
+		Leer respuesta
+		Si respuesta = nazar Entonces
+			Escribir "Adivinaste el numero es " nazar
+		SiNo
+			Escribir "Sigue imtentando"
+		FinSi
+	FinMientras
+	
+FinFuncion
+
+Funcion Ejercicio47
+	
+	//Suma de números impares: Utiliza un bucle while para calcular la suma de los números impares del 1 al 100
+	
+	//Entrada nimpar=0,sum=0
+	//Proceso Bucle for impar=1 hasta 99 sumar de 2 en 2 
+	//Sum = sum + nimpar
+	//Salida Semuestra sum 
+	
+	Definir nimpar,sum Como Entero
+	nimpar <- 0 
+	sum = 0
+	Para nimpar <- 1 Hasta 99 Con Paso 2 Hacer
+		sum <- sum + nimpar
+		
+	FinPara
+	
+	Escribir "La suma de los numeros impares del 1 al 100 es: ",sum
+	
+FinFuncion 
+
+Funcion Ejercicio48
+	
+	//Contador de caracteres: Escribir un programa que lea una palabra y presenta cuantos caracteres hay en dicha palabra
+	
+	//Entrada palabra=char n=0 
+	//Proceso Agrego a n opcion longitud
+	//Salida  n
+	
+	Definir palabra Como Caracter
+	Definir n Como Entero
+	Escribir "Ingrese la palabra"
+	Leer palabra
+	n = Longitud(palabra)
+	Escribir "La palabra ",palabra," tiene ",n," caracteres"
+FinFuncion
+
+
+Funcion Ejercicio49
+	
+	//Suma de números: Pide al usuario que ingrese números enteros positivos uno por uno y 
+	//utiliza un bucle while para calcular la suma de estos números
+	
+	//Entrada num=0[leer],suma=0
+	//Proceso Rep leer num 
+	//suma <- suma + num 
+	//Hasta num < 0
+	//Salida suma = suma - num
+	
+	Definir num,suma Como Entero
+	suma <- 0
+	Repetir
+		Escribir "Añada un numero a la suma: "
+		Leer num
+		
+		suma <- suma + num 
+	Hasta Que num < 0
+	suma = suma - num
+	Escribir "La suma de los numeros es:" suma
+	
+FinFuncion
+
+Funcion Ejercicio50
+	
+	//Cuenta regresiva: Pide al usuario que ingrese un número entero positivo y utiliza
+	//un bucle while para mostrar una cuenta regresiva desde ese número hasta 1.
+	
+	Definir num Como Entero
+	Escribir "Escribe un numero"
+	Leer num 
+	Escribir "Cuenta regresiva"
+	Para x <- num Hasta 1 Con Paso -1 Hacer
+		Escribir "- ",x
+	Fin Para
+	
+FinFuncion
+
+Funcion Ejercicio51
+	
+	//Suma de elementos: Crea un arreglo de números enteros y calcula la suma de todos sus elementos
+	
+	//Entrada num=0,cant=0,suma=0,i=bucle
+	//Proceso Para i<-1 Hasta cant-1 ;num(i) <- i;suma <- suma + num(i)
+	//Salida  Escribir "La suma es: ",suma
+	
+	
+	Definir num, cant,suma,i Como Entero
+	Escribir "La secuencia de numeros som: " 
+	cant <- 15
+	Dimension num(cant)
+	suma <- 0
+	
+	
+	Para i<-1 Hasta cant-1 Con Paso 1 Hacer
+		num(i) <- i
+		suma <- suma + num(i) 
+		Escribir num(i)
+	FinPara
+	
+	Escribir "La suma es: ",suma
+	
+FinFuncion
+
+Funcion Ejercicio52
+	
+	//Promedio de calificaciones: Crea un arreglo de calificaciones (números decimales) y calcula el promedio de las calificaciones
+	
+	//Entrada arreglo=.0[leer],suma=.0,promedio=.0
+	//Defino x=0
+	//Proceso Para x=0 Hasta 5-1 para ingresar las notas
+	//Para x=0 Hasta 5-1  para sumar las notas
+	//Salida  promedio <- suma / 5 
+	Definir arreglo,suma,promedio Como Real
+	
+	Definir x Como Entero
+	Dimension arreglo[5]
+	
+	Para x=0 Hasta 5-1 Con Paso 1 Hacer
+		Escribir "Ingresa la nota: "
+		Leer arreglo(x)
+	FinPara
+	
+	suma <- 0
+	promedio <- 0
+	
+	Para x=0 Hasta 5-1 Con Paso 1 Hacer
+		suma <- suma + arreglo(x)
+	FinPara
+	
+	promedio <- suma / 5 
+	
+	Escribir "El promedio es: ",promedio
+	
+FinFuncion
+
+Funcion Ejercicio53
+	
+	//Mayor y menor valor: Encuentra el valor máximo y mínimo en un arreglo de números enteros
+	
+	//Entrada n=0[leer],x=0,mayo=0,men=0,vector=0
+	//Proceso Dimension vector[n]
+	//Para x=0 Hasta n-1
+	// 	mayo <- 0  men <- 0  Para x=0 Hasta n-1
+	//Si x=0 Entoncesmayo = vector(x)men = vector(x)
+	//Si vector(x) > mayo Entoncesmayo = vector(x)
+	//si vector(x) < men Entonces  men = vector(x)
+	//Salida Escribir "El numero mayor es: ",mayo
+	//Escribir "El numero menor es: ",men
+		
+	Definir n,x,mayo,men,vector Como Entero
+	Escribir "Ingresa el tamaño del arreglo"
+	Leer n
+	Dimension vector[n]
+	Para x=0 Hasta n-1 Con Paso 1 Hacer
+		Escribir "Ingresa un numero"
+		Leer vector(x)
+	FinPara
+	mayo <- 0 
+	men <- 0 
+	Para x=0 Hasta n-1 Con Paso 1 Hacer
+		Escribir vector(x)
+		Si x=0 Entonces
+			mayo = vector(x)
+			men = vector(x)
+		SiNo
+			Si vector(x) > mayo Entonces
+				mayo = vector(x)
+			SiNo
+				Si vector(x) < men Entonces
+					men = vector(x)
+				FinSi
+			FinSi
+		FinSi
+	FinPara
+	Escribir "El numero mayor es: ",mayo
+	
+	Escribir "El numero menor es: ",men
+	
+FinFuncion
+
+Funcion Ejercicio54
+	
+	// Buscar un elemento: Pide al usuario que ingrese un número y verifica si ese número está presente en un arreglo dado
+	
+	//Entrada x=0,n=0 c=0,vector=0[leer]
+	//Proceso Dimension vector[10] Para x=0 Hasta 9
+	//c <- 0 Para x = 0 Hasta 9
+	//Salida Si n == vector(x) = c <- 1
+	
+
+	Definir x,n,c,vector Como Entero
+	Dimension vector[10]
+	Para x=0 Hasta 9 Con Paso 1 Hacer
+		Escribir "Ingresa un numero"
+		Leer vector(x)
+	FinPara
+	Escribir "Ingresa el numero a buscar"
+	Leer n
+	c <- 0
+	Para x = 0 Hasta 9 Con Paso 1 Hacer
+		Si n == vector(x) Entonces
+			Escribir " El numero ",n," Se encuentra en ",x
+			c <- 1
+		FinSi
+	FinPara
+	Si c = 0 Entonces
+		Escribir "El numero ",n," no se encuentra en la pocision" 
+	FinSi
+	
+FinFuncion
+
+Funcion Ejercicio55
+	
+	// Contar elementos pares: Cuenta cuántos números pares hay en un arreglo de números enteros. 
+	
+	//Entrada x=0,n=0,contadorpar=0
+	//Proceso Para x=0 Hasta n Hacer Si x mod 2 == 0 Entonces
+	//Salida Escribir "El total de numeros pares es: ",contadorpar
+	
+	Definir x,n,contadorpar Como Entero
+	Escribir "Cuantos numeros deseas contar"
+	Leer n
+	contadorpar <- 0
+	Para x=0 Hasta n Hacer
+		Si x mod 2 == 0 Entonces
+			contadorpar = contadorpar + 1
+		FinSi
+	FinPara
+	Escribir "El total de numeros pares es: ",contadorpar
+	
+FinFuncion
+
+
+Funcion Ejercicio56
+	
+	//Inversión de un arreglo: Invierte el orden de los elementos en un arreglo. Por ejemplo, [1, 2, 3] se convierte en [3, 2, 1]. 
+	
+	//Entrada  x=0[leer],n=0,vec1=dimension,vec2=Dimension 
+	//Proceso Para x = 0 Hasta n - 1 // arreglo de numeros 1
+	//vec2(0) <- vec1(n) para q la primera sea la ultima del vec1
+	//Para x=0 Hasta n - 1
+	//Salida Para x =0 Hasta n Escribir vec2(x)
+	
+	Definir x,n,vec1,vec2 Como Entero
+	Escribir "Ingresa el tamaño del arreglo"
+	Leer n
+	Dimension vec1[n],vec2[n]
+	Para x = 0 Hasta n - 1 Con Paso 1 Hacer
+		Escribir "Ingresa el numero"
+		Leer vec1(x)
+	FinPara
+	
+	vec2(0) <- vec1(n)
+	
+	Para x=0 Hasta n - 1 Con Paso 1 Hacer
+		vec2(x+1) = vec1(x)
+	FinPara
+		
+FinFuncion
+
+Funcion Ejercicio57
+	
+	//Buscar el índice: Pide al usuario que ingrese un valor y encuentra el índice de ese valor
+	//en un arreglo. Si el valor aparece más de una vez, muestra todos los índices.
+
+	
+	Definir x,n,c,vector Como Entero
+	Dimension vector[10]
+	Para x = 1 Hasta 10 Con Paso 1 Hacer
+		Escribir "Ingresa el numero"
+		leer vector(x)
+	Fin Para
+	Escribir "Ingresa el numero a buscar"
+	Leer n 
+	c = 0
+	Para x = 1 Hasta 10 Con Paso 1 Hacer
+		Si x == vector(x) Entonces
+			Escribir "El numero ",n," se encuentra en la posicion",x
+		c=1
+	    FinSi
+	FinPara
+	Si c == 0 Entonces
+		Escribir "El numero ",n," no se encuentra en el vector"
+	FinSi
+	
+FinFuncion
+
+Funcion Saludo
+	Escribir "Hola, como estas?"
+FinFuncion
+
+Funcion Ejercicio59 (n1,n2)
+	//Función con parámetros para sumar dos números
+	suma <- num1 + num2 
+FinFuncion
+
+Funcion Multiplicacion <- Ejercicio60 
+	//60. Función con return para multiplicar dos números
+	Multiplicacion <- n1 * n2
+Fin Funcion
+
+Funcion Ejercicio61
+	//Función sin return para determinar si un número es par o impar.
+	Leer v
+	Si v mod 2 = 0 Entonces
+		Escribir "El numero es par"
+	SiNo
+		Escribir "El numero es impar"
+	FinSi
+	
+FinFuncion
+
+Funcion area_rectangulo <- Ejercicio62 (b,a)
+	//Función con parámetros y return para calcular el área de un rectángulo.
+	area_rectangulo <- b * a 
+	
+FinFuncion
+
+Funcion Ejercicio63
+	//Función sin parámetros para imprimir tu nombre.
+	Escribir "Mi nombre es Hernan"
+FinFuncion
+
+Funcion grados <-Ejercicio64
+	// Función con return para convertir grados Celsius a Fahrenheit.
+	Leer x
+	grados <- (x * 1.8) + 32
+FinFuncion
+
+Funcion Ejercicio65(x,n)
+	//Función con parámetros para contar un carácter en una frase
+	Escribir "Ingrese la palabra"
+	Leer x
+	n = Longitud(x)
+	Escribir "La palabra ",x," tiene ",n," caracteres"
+	
+FinFuncion
+
+Funcion Ejercicio66
+	//Función sin return para imprimir números del 1 al 10.
+	Escribir "1"
+	Escribir "2"
+	Escribir "3"
+	Escribir "4"
+	Escribir "5"
+	Escribir "6"
+	Escribir "7"
+	Escribir "8"
+	Escribir "9"
+	Escribir "10"
+FinFuncion
+
+Funcion sumar<-Ejercicio67(n)
+	//Función con parámetros y return para sumar una lista de números.
+	Definir num, cant,suma Como Entero
+	Escribir "La secuencia de numeros som: " 
+	cant <- 15
+	Dimension num(cant)
+	suma <- 0
+	
+	
+	Para i<-1 Hasta cant-1 Con Paso 1 Hacer
+		num(i) <- i
+		suma <- suma + num(i) 
+		Escribir num(i)
+	FinPara
+	
+	Escribir "La suma es: ",suma
+	
+FinFuncion
+
+
+
+
+
+
+
+
+Algoritmo Tarea1
+	
+	//Ejercicio11()
+	//Ejercicio12()
+	//Ejercicio13()
+	//Ejercicio14()
+	//Ejercicio15()
+	//Ejercicio16()
+	//Ejercicio17()
+	//Ejercicio18()
+	//Ejercicio19()
+	//Ejercicio20()
+	//Ejercicio21()
+	//Ejercicio22()
+	//Ejercicio23()
+	//Ejercicio24()
+	//Ejercicio25()
+	//Ejercicio26()
+	//Ejercicio27()
+	//Ejercicio28()
+	//Ejercicio29()
+	//Ejercicio30()
+	//Ejercicio33()
+	//Ejercicio34()
+	//Ejercicio35()
+	//Ejercicio36()
+	//Ejercicio40()
+	//Ejercicio41()
+	//Ejercicio42()
+	//Ejercicio43()
+	//Ejercicio44()
+	//Ejercicio45()
+	//Ejercicio47()
+	//Ejercicio48()
+	//Ejercicio49()
+	//Ejercicio50()
+	//Ejercicio51()
+	//Ejercicio52()
+	//Ejercicio53()
+	//Ejercicio54()
+	//Ejercicio55()
+	//Ejercicio56()
+	//Ejercicio57()
+	//Saludo()
+	//Escribir Ejercicio59(n1,n2)
+	//Escribir Ejercicio60
+	//Ejercicio61()
+	//Ejercicio62()
+	//Ejercicio63()
+	//Escribir Ejercicio65(x,n)
+	//Ejercicio66()
+	//Ejercicio67()
+	FinAlgoritmo
